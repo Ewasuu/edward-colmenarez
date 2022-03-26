@@ -127,11 +127,43 @@ a{
     font-size: 1.5rem;
 }
 
+.header__inside-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__inside-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .profile__tittle{
     margin-top: 1rem;
     font-size: 3rem;
     text-align: center;
     font-weight: 600;
+}
+.download{
+    margin-top: 1rem;
+}
+.download > button{
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    font-style: normal;
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    transition-duration: .6s;
+}
+.download > button:hover{
+    color: var(--loader-purple);
+}
+.download > button > i{
+    font-style: normal;
 }
 /* Who am i? */
 .section,
@@ -236,7 +268,7 @@ a{
     transition-duration: .8s;
 }
 .footer > div > a > i:hover{
-    color: var(--purple);
+    color: var(--loader-purple);
 }
 
 @media screen and (min-width: 340px ) {
@@ -288,6 +320,7 @@ a{
     }
     .header__inside-container{
         display: flex;
+        flex-direction: initial;
     }
     .header__inside-container > div{
         margin-left: 2rem;
