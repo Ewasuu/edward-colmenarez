@@ -34,11 +34,21 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 100000;
     background-color: var(--loader-purple);
+}
+
+.loader > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader > div:nth-child(2){
+    margin-top: 2rem;
 }
 
 .loader__item{
