@@ -146,6 +146,11 @@ a{
     text-align: center;
     font-weight: 600;
 }
+.links__items{
+    display: flex;
+    width: 8rem;
+    justify-content: space-between;
+}
 .download{
     margin-top: 1rem;
 }
